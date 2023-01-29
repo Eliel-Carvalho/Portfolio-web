@@ -1,26 +1,36 @@
-const sectionCard = document.querySelector("div.constens-projetos")
+const sectionCard = document.querySelector("div.contens-projetos")
+
 const card = document.querySelector("div.projetos")
 
-const cads = [
+const cards = [
     {
-        thumb: "C:/Users/eliel/OneDrive/Documentos/Estudos/projetos/Portifollio/assets/img/jogo-da-velha.png",
-        title: "Jogo da velha",
-        paragrafo: "fibwfbfwbfwbuwfrbufrwbuwfrbuwfrqbwfrbifrwbfrbufrbufrbufrbuifrqwbuirfqwbuifrbufrebuifrburfbuifrbuifrbuifrbuifrew"
+        thumb: "assets/img/internet.png",
+        title: "Freelancer",
+        paragrafo: "atuando como desenvolvedor lider, responsavel por toda a parte visual e tecnica, trabalhando com uma equipe de 4 pessoas. desenvolmemos uma rede social pessoal, postagens de fotos, videos, curtidas e comentarios"
     },
     {
-        thumb: "C:/Users/eliel/OneDrive/Documentos/Estudos/projetos/Portifollio/assets/img/cadastro (1).png",
-        title: "Tela de Cadastro",
-        paragrafo: "fibwfbfwbfwbuwfrbufrwbuwfrbuwfrqbwfrbifrwbfrbufrbufrbufrbuifrqwbuirfqwbuifrbufrebuifrburfbuifrbuifrbuifrbuifrew"
+        thumb: "assets/img/jogo-da-velha.png",
+        title: "Jogo da Velha",
+        paragrafo: "atuando como desenvolvedor lider, responsavel por toda a parte visual e tecnica, trabalhando com uma equipe de 4 pessoas. desenvolmemos uma rede social pessoal, postagens de fotos, videos, curtidas e comentarios"
     },
     {
-        thumb: "C:/Users/eliel/OneDrive/Documentos/Estudos/projetos/Portifollio/assets/img/cep (1).png",
+        thumb: "assets/img/cep (1).png",
         title: "Buscador de Cep",
-        paragrafo: "fibwfbfwbfwbuwfrbufrwbuwfrbuwfrqbwfrbifrwbfrbufrbufrbufrbuifrqwbuirfqwbuifrbufrebuifrburfbuifrbuifrbuifrbuifrew"
+        paragrafo: "atuando como desenvolvedor lider, responsavel por toda a parte visual e tecnica, trabalhando com uma equipe de 4 pessoas. desenvolmemos uma rede social pessoal, postagens de fotos, videos, curtidas e comentarios"
+    },
+    {
+        thumb: "assets/img/cadastro (2).png",
+        title: "Tela de Cadastro",
+        paragrafo: "atuando como desenvolvedor lider, responsavel por toda a parte visual e tecnica, trabalhando com uma equipe de 4 pessoas. desenvolmemos uma rede social pessoal, postagens de fotos, videos, curtidas e comentarios"
     }
   
 ]
 
-cads.map(projetos => {
+cards.map(projetos => {
     const cardClone = card.cloneNode(true)
-    cardClone.appendChild
+    cardClone.querySelector("img").src = projetos.thumb
+    cardClone.querySelector("h3").innerHTML = projetos.title
+    cardClone.querySelector("p").innerHTML = projetos.paragrafo
+    sectionCard.appendChild(cardClone)
 })
+card.remove()
