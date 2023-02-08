@@ -120,7 +120,7 @@ body {
 }
 
 .section-conteiner  .txt {
-    width: 568px;
+    width: 768px;
 }
 
 .section-conteiner  .txt p {
@@ -135,8 +135,65 @@ body {
 
 }
 
+.section-habilidades {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-bottom: 60px;
+
+    color: #ffffff;
+}
+
+.section-habilidades h2 {
+    margin-bottom: 60px;
+}
+
+.softskills, .hardskills {
+    width: 1155px;
 
 
+    display: flex;
+    flex-direction: column;
+}
+
+.softskills h3, .hardskills h3 {
+    margin-bottom: 30px;
+}
+
+.contens-cards {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    width: 200px;
+    height: 360px;
+
+    padding: 15px 10px;
+    border-radius: 8px;
+
+    transition: all 0.8s;
+}
+
+.card h3 {
+    line-height: 1.8rem;
+    margin-block: 10px;
+}
+
+.card p {
+    line-height: 2.3rem;
+}
+
+.card:hover {
+    background-color: var(--CorCard);
+}
 
 /* footer */
 .section-footer {
