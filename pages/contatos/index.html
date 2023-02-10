@@ -1,14 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mim!</title>
+
+    <link rel="stylesheet" href="contato.css">
 </head>
 <body>
-    <main class="sobre/conteiner">
-        
+    <header class="header-conteiner">
+        <div class="header-header">
+            <span>Eliel Carvalho</span>
+            <div class="header-menu">
+                <div class="menu-toggle">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+                <nav class="header-nav">
+                    <ul>
+                        <li> <a href="index.html">Inicio</a> </li>
+                        <li> <a href="/pages/sobre/index.html">Sobre mim!</a> </li>
+                        <li> <a href="#pros">Projetos</a> </li>
+                        <li> <a href="/pages/contatos/index.html">Contatos</a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="sobre-conteiner">
+        <h1>Vamos Conversar!</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum rerum porro quas facere, commodi quod odit </p>
+
+        <form action="https://formsubmit.co/elielcarvalho0605@gmail.com" method="POST">
+            <div class="input-group">
+                <div class="input-box">
+                    <label for="name">Seu nome</label>
+                    <input type="text" name="name" id="name" placeholder="Nome">
+                </div>
+                <div class="input-box">
+                    <label for="email">Seu E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Exemple@gmail.com">
+                </div>
+                <div class="input-box">
+                    <label for="message">Messagem</label>
+                    <input type="text" name="message" id="message" class="message" placeholder="Oi...">
+                </div>
+               <button type="submit">Enviar</button>
+            </div>
+        </form>
     </main>
+    <footer class="section-footer">
+        <div class="footer-acoes">
+            <span class="eliel-carvalho">Eliel Carvalho</span>
+            <div class="footer-inicio">
+                <small>Inicio</small>
+                <small><a href="/pages/sobre/index.html">Sobre mim!</a></small>
+                <small><a href="#pros">Projetos</a></small>
+            </div>
+            <div class="footer-contatos">
+                <small>Contatos</small>
+                <small><a href="mailto:elielcarvalho0605@gmail.com">E-mail</a></small>
+                <small><a href="#">Linkedin</a></small>
+            </div>
+            <div class="footer-social"> 
+                <small>Social</small>
+                <div class="icon-social">
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Eliel-Carvalho" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/eliel_cavalho_bomfim/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="mailto:elielcarvalho0605@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                    <a href=" https://wa.me/+5571999994943" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyrigth">
+          <small>© 2023 Eliel Carvalho</small>
+        </div>
+    </footer>
 </body>
 </html>
